@@ -417,12 +417,12 @@ header{
 }
 
 .section-team .slide{
-    width: 280px;
-    height: 100%;
+    width: 250px;
+    height: 320px;
    display: inline-block;
    background-color: rgb(255, 255, 255);
    margin-right: 20px;
-   height:300px;
+   
    
 }
 
@@ -573,5 +573,15 @@ margin-top:30px;
 
     .section-services-icons{
         min-width:50%;
+        margin-bottom: 30px;
     }
+
+    .section-services-icons:first-child{
+        border-left: 0;
+    }
+
+    .section-team{
+        max-width:540px;
+
+
 }
