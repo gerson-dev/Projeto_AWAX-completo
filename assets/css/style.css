@@ -34,6 +34,10 @@ header{
     border-radius: 100%;
 }
 
+.menu-icon{
+    display:none;
+}
+
 .menu{
     flex:1;
     display:flex;
@@ -503,4 +507,71 @@ margin-top:30px;
 .section-team--social a:hover{
     cursor:pointer;
     background-color:#b28756;
+}
+
+
+@media(min-width:450px) and (max-width:800px){
+
+    .menu-icon{
+        width: 30px;
+        margin-right:40px;
+        display:block;
+    }
+    nav{
+        display:none;
+        position:absolute;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.9);
+        width:70vw;
+        height:calc(100vh - 100px);
+        top:100px;
+        right:0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li a{
+        font-weight:bold;
+        height:80px;
+        font-size: 18px;
+        border:none;
+        margin-left: 40px;
+        
+    }
+
+    .menu li a:hover{
+       border:none;
+    }
+
+    .menu li.active a{
+        border:none;
+       color: #b28756;
+    }
+
+    .logo{
+        margin-left: 40px;
+    }
+
+    .section-aboutus{
+        flex-direction: column;
+    }
+
+    .section-about--left{
+        padding:30px;  
+        margin-bottom: 30px; 
+    }
+
+    .section-about--right{
+        margin: auto;
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-services-icons{
+        min-width:50%;
+    }
 }
